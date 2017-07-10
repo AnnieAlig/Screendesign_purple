@@ -128,7 +128,14 @@ nav ul li a:visited{
 	text-align: center;
 	text-transform: uppercase;
 	margin: 150px auto 0 auto;
+<<<<<<< HEAD
 	
+=======
+}
+
+a[href="#go_ahead"]{
+	text-decoration: none;
+>>>>>>> 90c38af007f93332820adaae6b9a281519e4c6b6
 }
 
 .btn:hover{
