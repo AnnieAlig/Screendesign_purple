@@ -19,7 +19,6 @@ header{
 	height: 500px;
 	background: #e0b7b5 url(../img/header_bg.png) no-repeat center center;
 	background-size: cover;
-	/*position: relative;*/
 }
 .overlay{
 	width: 100%;
@@ -27,14 +26,14 @@ header{
 	background-color: rgba(224,183,181,.7);
 }
 
+
 /*	>>header logo & nav*/
+
 
 .logo{
 	color: white;
 	text-transform: uppercase;
 	padding-top: 55px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	font-family: 'PT Sans', sans-serif;
 	font-size: 20px;
@@ -43,8 +42,6 @@ header{
 }
 nav{
 	padding-top: 55px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -83,21 +80,14 @@ nav ul li a:visited{
 }
 
 
-
 /*	>>header capture*/
+
 
 .capture{
 	text-align: center;
-	margin: 90px auto 23px auto;
+	margin: 130px auto 23px auto;
 	color: white;
 	width: 615px;
-
-	/*вариант с позиционированием -->*/
-	/*margin: 0;
-  	transform: translate(-50%, -50%);
-  	position: absolute; 
-  	top: 50%; 
-  	left: 50%;*/
 }
 .capture h1{
 	font-size: 60px;
@@ -126,6 +116,8 @@ nav ul li a:visited{
 
 
 .btn{
+	text-decoration: none;
+	display: block;
 	width: 205px;
 	height: 45px;
 	line-height: 45px;
@@ -135,11 +127,8 @@ nav ul li a:visited{
 	font-size: 24px;
 	text-align: center;
 	text-transform: uppercase;
-	margin: 190px auto 0 auto;
-}
-
-a[href="#go_ahead"]{
-	text-decoration: none;
+	margin: 150px auto 0 auto;
+	
 }
 
 .btn:hover{
@@ -163,14 +152,16 @@ a[href="#go_ahead"]{
 	margin: 50px 95px 70px 95px;
 	font-family: 'PT Sans', sans-serif;
 	text-align: center;
-	font-style: 18px;
+	font-size: 18px;
 	color: #95a5a6;
 }
 
+
 /*section >> skills*/
 
+
 .skills{
-	border-bottom: 1px solid #95a5a6;
+	margin: 0 -52px;
 }
 .skills::after{
 	content: '';
@@ -181,9 +172,7 @@ a[href="#go_ahead"]{
 .skills div{
 	float: left;
 	width: 250px;
-}
-.skills div:nth-child(2){
-	margin: 0 105px 75px 105px;
+	margin: 0 52px 75px 52px;
 }
 
 .skills div h3{
@@ -201,7 +190,9 @@ a[href="#go_ahead"]{
 	text-align: justify;
 }
 
+
 /*section >> skills >> icons*/
+
 
 .skills div h3::before{
 	content: '';
@@ -222,11 +213,14 @@ a[href="#go_ahead"]{
 	background-position: -160px 0;
 }
 
+
 /*portfolio >> gallery*/
+
 
 .portfolio{
 	margin-top: 25px;
 	border-bottom: 1px solid #95a5a6;
+	border-top: 1px solid #95a5a6;
 }
 .gallery::after{
 	content: '';
@@ -245,17 +239,13 @@ a[href="#go_ahead"]{
 .image img{
 	width: 100%;
     height: 100%;
-    
     	/*на случай, если картинка не загрузилась ->>*/
     color: #7e4994;
 	font-size: 28px;
 	line-height: 40px;
 		/*	Анимация -->*/
 	opacity: .4;
-	-webkit-transition: opacity 1s ease-out ;
-    -moz-transition: opacity 1s ease-out ;
-    -o-transition: opacity 1s ease-out ;
-    transition: opacity 1s ease-out ;
+	transition: opacity 1s ease-out;
 }
 .image:nth-child(odd){
 	float: left;
@@ -267,6 +257,7 @@ a[href="#go_ahead"]{
 	
 /*gallery image >> hover*/
 
+
 .image{
 	position: relative;
 }
@@ -276,8 +267,6 @@ a[href="#go_ahead"]{
 	width: 100%;
 	margin: 0;
 	padding: 15px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	background-color: #9b59b6;
 	color: #7e4994;
@@ -287,10 +276,7 @@ a[href="#go_ahead"]{
 	position: absolute;
 		/*	Анимация -->*/
 	bottom: -100px;
-	-webkit-transition: bottom 1s ease-out ;
-    -moz-transition: bottom 1s ease-out ;
-    -o-transition: bottom 1s ease-out ;
-    transition: bottom 1s ease-out ;
+	transition: bottom 1s ease-out;
 }
 .about_img h3{
 	margin: 0;
@@ -300,6 +286,7 @@ a[href="#go_ahead"]{
 	font-weight: normal;
 }
 .view-btn{
+	display: block;
 	width: 40px;
 	height: 40px;
 	background-color: #9b59b6;
@@ -311,10 +298,7 @@ a[href="#go_ahead"]{
 	z-index: -5;
 		/*	Анимация -->*/
 	transform: scale(0);
-	-webkit-transition: transform 0.3s ease-out 0.5s;
-    -moz-transition: transform 0.3s ease-out 0.5s;
-    -o-transition: transform 0.3s ease-out 0.5s;
-    transition: transform 0.3s ease-out 0.5s;
+	transition: transform 0.3s ease-out 0.5s;
 }
 
 .view-btn::before{
@@ -345,15 +329,17 @@ a[href="#go_ahead"]{
 	box-shadow: 0 0 0 5px rgb(155,89,182);
 }
 
+
 /*portfolio >> view more button*/
 
+
 .more_btn{
+	display: block;
+	text-decoration: none;
 	margin: 75px auto;
 	padding-right: 45px;
 	width: 215px;
 	height: 55px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	background-color: #9b59b6;
 	color: white;
@@ -376,15 +362,15 @@ a[href="#go_ahead"]{
 	background-image: url(../img/sprite.png);
 	background-position: -240px -32px;
 }
-a[href="#more"]{
-	text-decoration: none;
-}
+
 .more_btn:hover{
 	background-color: rgba(155,89,182,.9);
 	box-shadow: inset 0 0 0 5px #78d8c5;
 }
 
+
 /*form*/
+
 
 .form{
 	margin: 0 95px 150px 95px;
@@ -397,8 +383,6 @@ form[name="contact"] legend{
 }
 
 form[name="contact"] input, textarea{
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 20px 0 20px 30px;
 	background-color: #e4e8e8;
@@ -422,7 +406,6 @@ input[type="email"]{
 	float: right;
 }
 
-
 form[name="contact"] textarea{
 	height: 250px;
 	width: 100%;
@@ -430,7 +413,9 @@ form[name="contact"] textarea{
 	resize: none;
 }
 
+
 /*footer*/
+
 
 footer{
 	height: 240px;
@@ -439,13 +424,16 @@ footer{
 	font-size: 24px;
 }
 
+	/*>> social icons*/
+
 .social{
 	height: 120px;
 	padding: 0 95px;
 	margin: 0 -125px;
 	
 }
-.social a > div{
+.social a{
+	display: block;
 	width: 85px;
 	height: 85px;
 	background-color: #f6f6f6;
@@ -455,7 +443,8 @@ footer{
 	margin: -25px 125px 0 125px;
 }
 
-.icon{
+.social a::before{
+	content: '';
 	height: 48px;
 	width: 48px;
 	margin: auto;
@@ -469,19 +458,19 @@ footer{
   	left: 50%;
 }
 
-.social .twitter .icon{
+.social a[href="#twitter"]::before{
 	background-position: 0 -78px;
 }
-.social .dribble .icon{
+.social a[href="#dribble"]::before{
 	background-position: -60px -75px;
 }
-.social .facebook .icon{
+.social a[href="#facebook"]::before{
 	background-position: -106px -78px;
 }
 
 	/*social icons >> hover*/
 
-.social a > div:hover{
+.social a:hover{
 	box-shadow: 0 0 0 5px rgba(155,89,182,.6);
 }
 
